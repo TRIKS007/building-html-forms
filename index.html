@@ -5,6 +5,68 @@
         <title>Building HTML Forms</title>
     </head>
     <body>
-        
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="first_name" id="firstName">
+                </div>
+                <br>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="last_name" id="lastName">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email_address" id="email">
+                </div>
+                <br>
+                <div>
+                    <label for="status">Status:</label>
+                    <select name="person_status" id="status">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teahcer</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favorite programming language: </p>
+
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label><br>
+                </div>
+                <br>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="currentDate">Current Date:</label>
+                    <input type="date" id="currentDate" name="curret_date">
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="Newsletter Agreement">
+                    <label for="newsletter">Signn up for newsletter.</label>
+                    <br>
+                    <input type="checkbox" name="terms" id="terms" value="Terms and Conditions">
+                    <label for="terms">Agree to terms and conditions.</label>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
     </body>
 </html>
